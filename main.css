@@ -11,6 +11,7 @@
     --blue: #05aecc;
     --red: #f0626e;
     --red-text: #ef5966;
+    --border-color: #cacaca;
     --gray: #c2c2c2;
     --li-color: #676767;
     --rss: #f8bc2e;
@@ -19,4 +20,138 @@
     --blue-point: #0063dc;
     --pink-point: #ff0084;
     --google: #1872bf;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.lists{
+    width: 28%;
+}
+ul{
+    width: 100%;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+ul li{
+    margin: 0;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: var(--black);
+}
+ol {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+}
+ol li{
+    margin: 0;
+    list-style: none;
+}
+ol li button{
+    width: 115px;
+    height: 85px;
+    border: 0;
+    background-color: var(--blue);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.red-button{
+    background-color: var(--red);
+}
+nav{
+    height: 70px;
+    background-color: var(--blue);
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+
+}
+nav ul li{
+    color: white;
+    margin: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100px;
+    margin-bottom: 15px;
+}
+.first{
+    width: 80px;
+}
+.second{
+    width: 140px;
+}
+.name-nav{
+    height: 100%;
+    line-height: 70px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+nav ul li:hover{
+    background-color: white;
+    color: var(--red);
+}
+nav ul li:hover .hover-item{
+    display: block;
+}
+.pad{
+    min-width: 263px;
+}
+.hover-item{
+    display: none;
+    min-width: 263px;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: var(--red-text);
+    box-shadow: 0 -5px 8px -3px rgba(0, 0, 0, 0.6);
+}
+.item{
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    
+}
+.image-item{
+    width: fit-content;
+    margin-right: 10px;
+}
+.head-item{
+    margin-bottom: 7px;
+}
+.text-item{
+    margin-bottom: 7px;
+    color: var(--black);
+    font-size: 14px;
+}
+.more-details{
+    width: 70%;
+    height: 22px;
+    background-color: var(--blue);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 17px;
 }
