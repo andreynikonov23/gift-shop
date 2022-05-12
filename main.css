@@ -256,13 +256,16 @@ nav ul li:hover .hover-item{
 .by{
     width: 50%;
     height: 55px;
-    line-height: 55px;
     margin-bottom: 18px;
     grid-template-columns: 3fr 2fr 2fr 3fr;
     display: none;
 }
 .by div{
+    padding-top: 5px;
     text-align: center;
+}
+.by .fa{
+    padding: 10px;
 }
 .baby-shop{
     background-color: var(--blue);
@@ -354,15 +357,112 @@ input::placeholder{
 }
 .crafts-block{
     width: 50%;
-    height: 50px;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 2fr;
+    height: 55px;
+    display: flex;
 }
 .crafts-button{
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 5px;
     text-align: center;
     line-height: 50px;
     color: white;
     font-family:'Lato', sans-serif;
     font-size: 30px;
     background-color: rgba(0, 0, 0, 0.6);
+}
+.title{
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: var(--black);
+    text-align: center;
+    background-color: white;
+    border: 1px solid var(--red);
+    border-radius: 10px;
+}
+.title-block{
+    display: none;
+    width: 100px;
+    height: 0px;
+    position: relative;
+    bottom: 35px;
+    right: 25px;
+}
+.crafts-block .gift{
+    text-align: center;
+    
+    width: 50px;
+}
+.crafts-block .shop{
+    text-align: center;
+    width: 50px;
+}
+.crafts-block .fa{
+    position: relative;
+    top: 15px;
+    
+}
+.crafts-block .gift:hover .title-block{
+    position: relative;
+    display: block;
+}
+.crafts-block .shop:hover .title-block{
+    position: relative;
+    display: block;
+}
+.border{
+    border-left: 15px solid var(--red);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    transform: rotate(90deg);
+    position: relative;
+    top: 35px;
+}
+.arrow{
+    border-left: 14px solid white;
+    border-top: 15px solid transparent;
+    border-bottom: 14px solid transparent;
+    transform: rotate(90deg);
+    position: relative;
+    top: 5px;
+}
+.cost{
+    width: 24%;
+    text-align: center;
+    line-height: 55px;
+}
+.jewerly{
+    height: 100%;
+    background-image: url(img/jewerly.jpg);
+    background-size: cover;
+}
+.ribbon{
+    display: inline-block;
+    width: 85px;
+    height: 95px;
+}
+.jewerly-block{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.jewerly-text{
+    font-family: 'Aparajita', sans-serif;
+    font-size: 54px;
+    color: white;
+    padding: 25px;
+}
+.r1{
+    width: 85px;
+    height: 95px;
+    background-color: var(--red);
+    display: inline-block;
+}
+.r2{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
 }
