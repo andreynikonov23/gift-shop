@@ -49,17 +49,17 @@ ul li{
     font-size: 16px;
     color: var(--black);
 }
-ol {
+.lists ol {
     display: flex;
     width: 100%;
     padding: 0;
     justify-content: space-between;
 }
-ol li{
+.lists ol li{
     margin: 0;
     list-style: none;
 }
-ol li button{
+.lists ol li button{
     width: 115px;
     height: 85px;
     border: 0;
@@ -69,7 +69,7 @@ ol li button{
     font-size: 16px;
     cursor: pointer;
 }
-.red-button{
+.lists .red-button{
     background-color: var(--red);
 }
 nav{
@@ -589,16 +589,18 @@ aside button{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2%;
     justify-content: space-between;
 }
 .prod-item{
     border: 1px solid #dfdfdf;
-    width: 270px;
+    width: 100%;
 }
 .image-prod{
     height: 290px;
-    width: 270px;
+    width: 100%;
     padding-top: 20px;
+    cursor: pointer;
 }
 .img1{
     background-image: url(img/product1.jpg);
@@ -629,4 +631,133 @@ aside button{
 .img3 .ribbon-prod{
     background-color: var(--blue);
 }
-
+.product-head{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    color: var(--black);
+}
+.subtext{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--red-text);
+}
+.menu-bar{
+    width: 100%;
+    background-color: orangered;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+.gray-button{
+    width: 100%;
+    background-color: white;
+    color: silver;
+    border: 1px solid silver;
+}
+.cost-button{
+    width: 100%;
+    background-color: var(--red);
+}
+.new .cost-button{
+    background-color: var(--blue);
+}
+.text{
+    padding-left: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: var(--black);
+    margin-bottom: 40px;
+}
+.lower-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.lower-img img{
+    cursor: pointer;
+}
+.button-center{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.register{
+    width: 50%;
+    border: 0;
+    background-color: var(--blue);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 27px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+aside{
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 50px;
+}
+footer{
+    width: 90%;
+    margin: 0 auto;
+}
+.lists2{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.list-head{
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    color: var(--black);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+footer ol{
+    margin: 0;
+    padding: 0;
+}
+footer li{
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: var(--black);
+    cursor: pointer;
+    width: fit-content;
+}
+footer li:not(:last-child){
+    margin-bottom: 20px;
+}
+.subscribe{
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+.email{
+    font-family: 'Lato', sans-serif;
+    font-family: 14px;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+.subscribe button{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    background-color: var(--blue);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+.last{
+    margin-bottom: 15px;
+}
