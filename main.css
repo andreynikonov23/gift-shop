@@ -25,6 +25,24 @@
     width: 90%;
     margin: 0 auto;
 }
+.burder-container{
+    display: none;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.burder-container .logo{
+    display: none;
+}
+.burger{
+    cursor: pointer;
+    
+}
+.line{
+    height: 2px;
+    width: 40px;
+    margin-bottom: 5px;
+    background-color: var(--blue);
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -32,9 +50,10 @@ header{
 .logo{
     margin-top: 20px;
     cursor: pointer;
+    width: fit-content;
 }
 .lists{
-    width: 28%;
+    min-width: 28%;
 }
 ul{
     width: 100%;
@@ -79,7 +98,6 @@ nav{
 }
 nav ul{
     display: flex;
-    justify-content: space-between;
     padding: 0;
     list-style: none;
     font-family: 'Lato', sans-serif;
@@ -119,11 +137,11 @@ nav ul li:hover .hover-item{
     display: block;
 }
 .pad{
-    min-width: 263px;
+    min-width: 283px;
 }
 .hover-item{
     display: none;
-    min-width: 283px;
+    min-width: 100%;
     padding: 10px;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -303,9 +321,10 @@ sup{
 .womens:hover .by{
     display: grid;
 }
-.womens:hover .womens-text-block{
+.womens .brightness:hover .womens-text-block{    
     display: none;
 }
+
 
 .kids:hover .brightness{
     background-color: rgba(0, 0, 0, 0.4);
@@ -360,6 +379,7 @@ input::placeholder{
     width: 50%;
     height: 55px;
     display: flex;
+    justify-content: flex-end;
 }
 .crafts-button{
     padding-left: 45px;
@@ -394,17 +414,20 @@ input::placeholder{
 }
 .crafts-block .gift{
     text-align: center;
-    
+    min-width: 40px;
     width: 50px;
 }
 .crafts-block .shop{
     text-align: center;
+    min-width: 40px;
     width: 50px;
 }
 .crafts-block .fa{
     position: relative;
     top: 15px;
-    
+}
+.crafts-block .cost{
+    min-width: 90px;
 }
 .crafts-block .gift:hover .title-block{
     position: relative;
@@ -545,12 +568,14 @@ aside button{
 }
 .groups{
     display: grid;
+    overflow: hidden;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     grid-column-gap: 30px;
     margin-bottom: 70px;
 }
 .group{
+    min-width: 310px;
     height: 300px;
 }
 .bag{
@@ -591,6 +616,7 @@ aside button{
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2%;
     justify-content: space-between;
+    overflow: hidden;
 }
 .prod-item{
     border: 1px solid #dfdfdf;
@@ -677,7 +703,8 @@ aside button{
 }
 .lower-img{
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     margin-bottom: 35px;
 }
@@ -711,6 +738,7 @@ footer{
     padding-right: 20px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 55px;
 }
 .list-head{
     font-family: 'Lato', sans-serif;
@@ -757,7 +785,317 @@ footer li:not(:last-child){
     color: white;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
+    cursor: pointer;
 }
 .last{
     margin-bottom: 15px;
+}
+.social-panel{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+.rss{
+    background-color: var(--rss);
+    color: white;
+    text-align: center;
+}
+.facebook{
+    background-color: var(--facebook);
+    color: white;
+}
+.twitter{
+    background-color: var(--twitter);
+    color: white;
+}
+.points{
+    height: 55px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gray);
+}
+.blue-point{
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    background-color: var(--blue-point);
+    margin-right: 5px;
+}
+.pink-point{
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    background-color: var(--pink-point);
+}
+.google{
+    background-color: var(--google);
+    color: white;
+}
+.copyright{
+    border-bottom: 1px solid #bdbdbd;
+    border-top: 1px solid #bdbdbd;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: var(--black);
+}
+.copyright span{
+    color: var(--red-text);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1457px){
+    .group:hover .brightness{
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 1427px){
+    .last-li .pad{
+        background-color: orangered;
+        position: relative;
+        right: 205px;
+    }
+    .last-li .hover-item{
+        right: 205px;
+    }
+    .crafts-button{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media (max-width: 1242px){
+    .lower-img img{
+        width: 269px;
+        height: 152px;
+    }
+    .list-head{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1197px){
+    .slider .brightness:hover{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: flex-end;
+        justify-items: center;
+    }
+    .slider .baby-shop{
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+@media (max-width: 1117px){
+    nav ul {
+        width: 100%;
+    }
+    nav ul li{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        width: 100%;
+    }
+}
+@media(max-width: 1037px){
+    footer{
+        width: 100%;
+    }
+    .list-head{
+        text-align: center;
+    }
+    nav ul li{
+        width: 50px;
+    }
+    .first{
+        width: 50px;
+        text-align: center;
+    }
+    .second{
+        font-size: 10px;
+        width: 100px;
+    }
+    .womens-head{
+        font-size: 25px;
+    }
+}
+@media (max-width: 925px){
+    .burder-container{
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
+}
+@media(max-width: 882px){
+    .slider{
+        display: block;
+    }
+    .big{
+        margin-bottom: 5px;
+    }
+    .small{
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5px;
+    }
+    .by{
+        width: 80%;
+    }
+}
+@media (max-width: 823px){
+    .lower-img{
+        grid-template-columns: 369px;
+        justify-content: center;
+        justify-items: center;
+        grid-row-gap: 5px;
+    }
+    .lists2{
+        display: block;
+    }
+    .list-head{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    footer ol{
+        margin-bottom: 50px;
+    }
+    footer li{
+        display: inline-block;
+    }
+    footer li:not(:last-child){
+        margin-right: 15px;
+    }
+    .social-panel{
+        width: 60%;
+        grid-column-gap: 5px;
+    }
+}
+@media (max-width: 814px){
+    .slider2{
+        display: block;
+    }
+    .column-one{
+        margin-bottom: 5px;
+    }
+    .jewerly{
+        height: 495px;
+    }
+}
+@media (max-width: 625px){
+    .burder-container .logo{
+        display: block;
+    }
+    .burder-container .logo img{
+        width: 75px;
+        height: 56px;
+    }
+    .burder-container{
+        justify-content: space-between;
+        border-bottom: 1px solid var(--red);
+    }
+    .burger{
+        margin-top: 20px;
+    }
+    header{
+        display: none;
+    }
+    .mens-info{
+        width: 60%;
+    }
+    .womens-info{
+        width: 60%;
+    }
+    .slider .brightness:hover{
+        justify-content: flex-start;
+        justify-items: flex-start;
+    }
+}
+@media(max-width: 479px){
+    .womens-info{
+        width: 100%;
+    }
+}
+@media(max-width: 439px){
+    .jewerly{
+        display: block;
+    }
+    .jewerly-block{
+        transform: rotate(0deg);
+        width: 100%;
+        left: 0;
+        top: 410px;
+        right: 1px;
+    }
+    .new_product{
+        margin: 0;
+        font-size: 18px;
+    }
+    .copyright{
+        display: block;
+    }
+    .search-block{
+        padding: 20px;
+    }
+    .buttons button{
+        position: relative;
+        top: 20px;
+        width: 50px;
+        height: 50%;
+    }
+}
+@media(max-width: 393px){
+    .jewerly-text{
+        font-size: 35px;
+    }
+}
+@media(max-width: 345px){
+    .mens-info{
+        width: 100%;
+    }
+}
+@media(max-width: 327px){
+    .crafts-button{
+        padding: 5px;
+        font-size: 18px;
+    }
+}
+@media(max-width: 315px){
+    .jewerly-block{
+        padding: 0;
+    }
+    .social{
+        width: 35px;
+        height: 35px;
+    }
 }
